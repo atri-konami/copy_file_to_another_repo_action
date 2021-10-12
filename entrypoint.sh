@@ -24,7 +24,7 @@ git clone --single-branch --branch $INPUT_DESTINATION_BRANCH "https://x-access-t
 
 echo "Copying contents to git repo"
 mkdir -p $CLONE_DIR/$INPUT_DESTINATION_FOLDER
-if [ ! -z "$INPUT_DELETE_DESTINATION_FOLDER"]
+if [ ! -z "$INPUT_DELETE_DESTINATION_FOLDER" ]
 then
   rm -rf $CLONE_DIR/$INPUT_DESTINATION_FOLDER/$INPUT_DELETE_DESTINATION_FOLDER
 fi
